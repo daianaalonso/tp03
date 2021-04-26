@@ -14,8 +14,6 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-;
-
 public class CumpleanieroTest {
     String hoy = LocalDate.now().format(DateTimeFormatter.ofPattern("yyyy/MM/dd"));
     private final Empleado empleado = new Empleado("Young", "Angus", "1982/10/08", "angus@acdc.com");
