@@ -11,7 +11,7 @@ public class ServicioEmail implements EnviarEmail {
     public void enviarEmail(String destinatario, String asunto, String mensaje) {
         try {
             email = new Email(destinatario, asunto, mensaje);
-            email.enviarEmail();
+            email.enviar();
         } catch (SmtpException e) {
             throw new RuntimeException("No pudo enviarse el email", e);
         }

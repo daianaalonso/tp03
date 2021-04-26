@@ -1,18 +1,21 @@
 package ar.unrn.tp3.ej2.servicio.Libreria;
 
 public class Email {
-    private String destinatario;
-    private String asunto;
-    private String cuerpo;
+    private String destinatarioEmail;
+    private String tituloEmail;
+    private String cuerpoEmail;
 
-    public Email(String destinatario, String asunto, String cuerpo) {
-        this.destinatario = destinatario;
-        this.asunto = asunto;
-        this.cuerpo = cuerpo;
+    public Email(String destinatarioEmail, String tituloEmail, String cuerpoEmail) {
+        this.destinatarioEmail = destinatarioEmail;
+        this.tituloEmail = tituloEmail;
+        this.cuerpoEmail = cuerpoEmail;
     }
 
-    public void enviarEmail() throws SmtpException {
-        System.out.println("Se envio el email con exito ");
+    public void enviar() throws SmtpException {
+        //conectar con el servidor SMTP para el envio
+        //Si algo sale mal, se lanza una SmtpException
+        //Si todo sale bien
+        System.out.println("Se envió el email correctamente");
     }
 
     public String mensaje() {
