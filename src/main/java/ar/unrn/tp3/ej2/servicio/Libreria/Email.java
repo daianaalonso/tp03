@@ -18,7 +18,4 @@ public class Email {
         System.out.println("Se envió el email correctamente");
     }
 
-    public String mensaje() {
-        return cuerpo;
-    }
 }
