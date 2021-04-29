@@ -36,6 +36,6 @@ public class CumpleanieroTest {
         cumpleaniero.enviarEmailDeCumpleanieros();
         String resultadoEsperado = "¡Feliz cumpleaños Brian!";
         //VERIFICACIÓN
-        assertEquals(resultadoEsperado, servicioEmail.emailEnviado());
+        assertEquals(resultadoEsperado, servicioEmail.mensajeEnviado());
     }
 }
