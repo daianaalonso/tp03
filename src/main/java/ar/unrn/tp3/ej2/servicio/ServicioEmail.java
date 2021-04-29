@@ -19,7 +19,7 @@ public class ServicioEmail implements EnviarEmail {
         }
     }
 
-    public String mensajeEnviado(){
+    public String mensajeEnviado() {
         return this.mensaje;
     }
 
